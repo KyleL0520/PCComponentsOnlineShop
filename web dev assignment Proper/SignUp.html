@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxiware</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="Assets/icon/webicon.png">
+    <link rel="stylesheet" href="css/SignUp.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="Home.html">
+                <img src="logo/logo_ver5-removebg-preview.png" alt="Maxiware"
+                    style="height: 90px;width: 300px;margin-top: 10px; float: right;" class="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="Login.html" class="link"> <img src="/Assets/icon/USER.png" alt="user"
+                            style="width: 19px; margin-right: 10px; max-width: 100px;">Profile</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdownbtn">
+                            <a class="link">Components</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div class="column">
+                                    <a href="CPU.html" class="droplink"><img src="Assets/symbol/CPU.svg" alt="CPU"
+                                            style="height: 100px; width:100px;"><br>CPU</a>
+                                    <a href="STORE.html" class="droplink"><img src="Assets/symbol/SSD.svg" alt="SSD"
+                                            style="height: 100px; width:100px;"><br>STORAGE</a>
+                                </div>
+                                <div class="column">
+                                    <a href="CASE.html" class="droplink"><img src="Assets/symbol/CASE.svg" CASE"
+                                            style="height: 100px; width:100px;"><br>CASE</a>
+                                    <a href="COOLER.html" class="droplink"><img src="Assets/symbol/COOLER.svg"
+                                            alt="COOLER" style="height: 100px; width:100px;"><br>CPU COOLER</a>
+                                </div>
+                                <div class="column">
+                                    <a href="MEMORY.html" class="droplink"><img src="Assets/symbol/RAM.svg" alt="CASE"
+                                            style="height: 100px; width:100px;"><br>MEMORY</a>
+                                    <a href="POWER.html" class="droplink"><img src="Assets/symbol/POWER.svg" alt="POWER"
+                                            style="height: 100px; width:100px;"><br>POWER SUPPLY</a>
+                                </div>
+                                <div class="column">
+                                    <a href="GPU.html" class="droplink"><img src="Assets/symbol/GPU.png" alt="GPU"
+                                            style="height: 100px; width:100px;"><br>GPU</a>
+                                    <a href="MOTHER.html" class="droplink"><img src="Assets/symbol/MB.png" alt="MB"
+                                            style="height: 100px; width:100px;"><br>MOTHERBOARD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="build.html" class="link">Build</a>
+                </li>
+                <li>
+                    <a href="about.html" class="link">About Us</a>
+                </li>
+                <li>
+                    <a href="FAQ.html" class="link">FAQ</a>
+                </li>
+                <li>
+                    <a href="Review.html" class="link">Reviews</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="video-wrapper">
+        <video playsinline autoplay muted loop poster="Assets/bg2.jpeg">
+            <source src="Assets/144259 (Original).mp4" type="video/webm">
+            Your Browser does not support the video tag.
+        </video>
+
+        <article>
+
+            <section>
+                <div class="Sign-up">
+                    <form id="form">
+                        <fieldset id="signupBox">
+                            <legend>Sign Up</legend>
+
+                            <div class="input-box">
+                                <input type="text" id="username" required />
+                                <label for="username">Usename</label>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="text" id="firstName" name="firstName" required />
+                                <label for="firstName">First Name</label>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="text" id="lastName" name="lastName" required />
+                                <label for="lastName">Last Name</label>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="email" id="email" name="emailBox"
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required
+                                    title="Please enter a valid email address" />
+                                <label for="email">Email</label>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="tel" id="Phone-number" name="phonenumBox" placeholder="(nnn) nnn-nnnn"
+                                    required />
+                                <label for="Phone-number">Phone Number</label>
+                            </div>
+
+                            <div class="select-box">
+                                <label for="country">Country</label>
+                                <select id="country">
+                                    <option value="afghanistan">Afghanistan</option>
+                                    <option value="albania">Albania</option>
+                                    <option value="algeria">Algeria</option>
+                                    <option value="andorra">Andorra</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="bahamas">Bahamas</option>
+                                    <option value="bahrain">Bahrain</option>
+                                    <option value="bangladesh">Bangladesh</option>
+                                    <option value="barbados">Barbados</option>
+                                    <option value="belarus">Belarus</option>
+                                    <option value="belgium">Belgium</option>
+                                    <option value="benin">Benin</option>
+                                    <option value="bhutan">Bhutan</option>
+                                    <option value="bolivia">Bolivia</option>
+                                    <option value="brazil">Brazil</option>
+                                    <option value="cambodia">Cambodia</option>
+                                    <option value="cameroon">Cameroon</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="china">China</option>
+                                    <option value="colombia">Colombia</option>
+                                    <option value="comoros">Comoros</option>
+                                    <option value="costa rica">Costa Rica</option>
+                                    <option value="cyprus">Cyprus</option>
+                                    <option value="denmark">Denmark</option>
+                                    <option value="djibouti">Djibouti</option>
+                                    <option value="dominica">Dominica</option>
+                                    <option value="ecuador">Ecuador</option>
+                                    <option value="egypt">Egypt</option>
+                                    <option value="eritrea">Eritrea</option>
+                                    <option value="estonia">Estonia</option>
+                                    <option value="ethiopia">Ethiopia</option>
+                                    <option value="fiji">Fiji</option>
+                                    <option value="finland">Finland</option>
+                                    <option value="france">France</option>
+                                    <option value="gabon">Gabon</option>
+                                    <option value="georgia">Georgia</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="greece">Greece</option>
+                                    <option value="guam">Guam</option>
+                                    <option value="guyana">Guyana</option>
+                                    <option value="haiti">Haiti</option>
+                                    <option value="honduras">Honduras</option>
+                                    <option value="hongkong">Hong Kong</option>
+                                    <option value="hungary">Hungary</option>
+                                    <option value="iceland">Iceland</option>
+                                    <option value="india">India</option>
+                                    <option value="indonesia">Indoneisa</option>
+                                    <option value="iran">Iran</option>
+                                    <option value="iraq">Iraq</option>
+                                    <option value="ireland">Ireland</option>
+                                    <option value="israel">Israel</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="jamaica">Jamaica</option>
+                                    <option value="japan">Japan</option>
+                                    <option value="jordan">Jordan</option>
+                                    <option value="kenya">Kenya</option>
+                                    <option value="kiribati">Kiribati</option>
+                                    <option value="north korea">North Korea</option>
+                                    <option value="south korea">South Korea</option>
+                                    <option value="kosovo">Kosovo</option>
+                                    <option value="kuwait">Kuwait</option>
+                                    <option value="lao">Lao</option>
+                                    <option value="latvia">Latvia</option>
+                                    <option value="lebanon">Lebanon</option>
+                                    <option value="macau">Macau</option>
+                                    <option value="malawi">Malawi</option>
+                                    <option value="alaysia">Malaysia</option>
+                                    <option value="mali">Mali</option>
+                                    <option value="mauritania">Mauritania</option>
+                                    <option value="mayotte">Mayotte</option>
+                                    <option value="mexico">Mexico</option>
+                                    <option value="monaco">Monaco</option>
+                                    <option value="morocco">Morocco</option>
+                                    <option value="myanmar">Myanmar</option>
+                                    <option value="namibia">Namibia</option>
+                                    <option value="netherlands">Netherlands</option>
+                                    <option value="new zealand">New Zealand</option>
+                                    <option value="nicaragua">Nicaragua</option>
+                                    <option value="norway">Norway</option>
+                                    <option value="oman">Oman</option>
+                                    <option value="pakistan">Pakistan</option>
+                                    <option value="paraguay">Paraguay</option>
+                                    <option value="peru">Peru</option>
+                                    <option value="philippines">Philippines</option>
+                                    <option value="poland">Poland</option>
+                                    <option value="portugal">Portugal</option>
+                                    <option value="qatar">Qatar</option>
+                                    <option value="romania">Romania</option>
+                                    <option value="russia">Russia</option>
+                                    <option value="samoa">Samoa</option>
+                                    <option value="serbia">Serbia</option>
+                                    <option value="singapora">Singapora</option>
+                                    <option value="somalia">Somalia</option>
+                                    <option value="sudan">Sudan</option>
+                                    <option value="switzerland">Switzerland</option>
+                                    <option value="taiwan">Taiwan</option>
+                                    <option value="tajikistan">Tajikistan</option>
+                                    <option value="thailand">Thailand</option>
+                                    <option value="tibet">Tibet</option>
+                                    <option value="tonga">Tonga</option>
+                                    <option value="turkey">Turkey</option>
+                                    <option value="uganda">Uganda</option>
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="united arab emirates">United Arab Emirates</option>
+                                    <option value="united kingdom">United Kingdom</option>
+                                    <option value="united states">United States</option>
+                                    <option value="uruguay">Uruguayy</option>
+                                    <option value="vanuatu">Vanuatu</option>
+                                    <option value="venezuela">Venezuela</option>
+                                    <option value="vitenam">Vitenam</option>
+                                    <option value="western sahara">Western Sahara</option>
+                                    <option value="yemen">Yemen</option>
+                                    <option value="zambia">Zambia</option>
+                                    <option value="zimbabwe">Zimbawe</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" id="password" name="passwordBox"
+                                    pattern=(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,} required
+                                    title="&#8226 At least one number &#8226 At least one uppercase &#013 &#8226 At least one lowercase letter &#013 &#8226 At least 8 or more characters" />
+                                <label for="password">Password</label>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" id="confirm password" name="confirmpswBox"
+                                    pattern=(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,} required
+                                    title="&#8226 At least one number &#8226 At least one uppercase &#013 &#8226 At least one lowercase letter &#013 &#8226 At least 8 or more characters" />
+                                <label for="confirm password">Confirm Password</label>
+                            </div>
+
+                            <button type="submit" id="signupButton" name="signupButton">Sign Up</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <footer>
+        <div id="contact-box">
+            <label id="contact"><strong>CONTACT</strong></label>
+            <p>168, Jln Bukit Bintang,</br></br> Bukit Bintang, 55100 Kuala Lumpur</p></br>
+            <div id="seperateContact">
+                <a href="https://www.instagram.com/maxiware2000/"><img src="Assets/icon/IG.png" alt="instagram"
+                        width="30px" /></a>
+                <a href="https://www.facebook.com/"><img src="Assets/icon/facebook.png" alt="facebook"
+                        width="30px" /></a>
+                <a href="mailto: Maxiware2000@gmail.com"><img src="Assets/icon/GM.png" alt="gmail" width="30px" /></a>
+                <a href="https://twitter.com/"><img src="Assets/icon/twitter.png" alt="twitter" width="30px" /></a>
+                <a href="tel: 999-999-9999"><img src="Assets/icon/TEL.png" alt="TEL" width="30px"></a>
+            </div>
+        </div>
+
+        <div>
+            <label id="components"><strong>COMPONENTS</strong></label> </br> </br>
+            <div id="seperateComponents">
+                <a href="CPU.html">CPU</a> </br>
+                <a href="STORE.html">STORAGE</a> </br>
+                <a href="CASE.html">CASE</a> </br>
+                <a href="COOLER.html">CPU_COOLER</a> </br>
+                <a href="MEMORY.html">MEMORY</a> </br>
+                <a href="POWER.html">POWER_SUPPLY</a> </br>
+                <a href="GPU.html">GPU</a> </br>
+                <a href="MOTHER.html">MOTHERBOARD</a> </br>
+            </div>
+        </div>
+
+        <div>
+            <label id="linksFooter"><strong>LINKS</strong></label> </br> </br>
+            <div id="seperateLinks">
+                <a href="about.html">ABOUT_US</a> </br>
+                <a href="pf_profile.html">PROFILE</a> </br>
+                <a href="build.html">BUILD</a> </br>
+                <a href="FAQ.html">FAQ</a> </br>
+                <a href="Review.html">REVIEWS</a>
+            </div>
+        </div>
+
+        <div id="stayTunedWithUs">
+            <label id="stayTuned"><strong>STAY TUNED WITH US</strong></label> </br> </br> </br>
+            <input type="email" id="emailFooter" placeholder="Your Email Address"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Please enter a valid email address" /> </br>
+            </br> </br>
+            <button type="submit" id="subscribe"><a href="#">Subscribe</a></button>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('form');
+        const un = document.getElementById('username');
+        const fn = document.getElementById('firstName');
+        const ln = document.getElementById('lastName');
+        const em = document.getElementById('email');
+        
+
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            const unval = un.value;
+            const fnval = fn.value;
+            const lnval = ln.value;
+            const emval = em.value;
+
+            localStorage.setItem('unsave',unval);
+            localStorage.setItem('fnsave',fnval);
+            localStorage.setItem('lnsave',lnval);
+            localStorage.setItem('emsave',emval);
+            
+            window.location.href = "profile.html";
+        });
+    </script>
+</body>
+
+</html>

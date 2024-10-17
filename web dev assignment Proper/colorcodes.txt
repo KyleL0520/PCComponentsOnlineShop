@@ -1,0 +1,16 @@
+lighter dark purple
+#331261
+
+dark purple
+#24133b
+
+dark lavender
+#9465d6
+
+extreme dark purple
+#1b0736
+
+light purple
+#ee00ff
+
+background color

@@ -1,0 +1,285 @@
+article {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.buildpc {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/*TABLE*/
+#computerBuilder {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tableCats {
+    color: white;
+    background-color: black;
+}
+
+th,
+td {
+    border: 1px solid #9465d6;
+    padding: 8px;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: fit-content;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: fit-content;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: fit-content;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 150px;
+    height: 100px;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 100px;
+}
+
+#computerBuilder tr:nth-child(even) {
+    background-color: #24133b;
+}
+
+#computerBuilder th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #24133b;
+    color: white;
+}
+
+.addcomp {
+    text-decoration: none;
+    color: black;
+}
+
+a:link.addcomp {
+    color: #ee00ff;
+}
+
+.addcomp a:visited {
+    color: rgb(181, 175, 175);
+}
+
+a:hover.addcomp {
+    color: #ee00ff;
+}
+
+
+.removeComp {
+    color: white;
+    background-color: #9465d6;
+
+}
+
+.main-header {
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(12px);
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 1.5em;
+    position: relative;
+}
+
+/*Adjust the dropdown list for product select*/
+select {
+    width: 45%;
+    color: aliceblue;
+    background-color: #24133b;
+
+}
+
+.section-header {
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-primary {
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #ee00ff;
+    color: white;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #ee00ff;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: red;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 60px;
+}
+
+.shop-item-price {
+    text-align: center;
+    flex-grow: 1;
+    color: white;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+}
+
+.cart-quantity-input {
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 30%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.cart-row:last-child {
+    border-bottom: 1px solid white;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #9465d6;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #ee00ff;
+    font-size: 1.1em;
+}

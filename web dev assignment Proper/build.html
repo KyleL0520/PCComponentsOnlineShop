@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxiware</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="Assets/icon/webicon.png">
+    <link rel="stylesheet" href="css/build.css">
+</head>
+
+<body>
+    <header>
+        <audio autoplay loop>
+            <source src="Assets/a-jazz-piano-110481.mp3" type="audio/mp3">
+            Your browser does not suppport the audio element
+        </audio>
+        <nav>
+            <a href="Home.html">
+                <img src="logo/logo_ver5-removebg-preview.png" alt="Maxiware"
+                    style="height: 90px;width: 300px;margin-top: 10px; float: right;" class="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="Login.html" class="link"> <img src="/Assets/icon/USER.png" alt="user"
+                            style="width: 19px; margin-right: 10px; max-width: 100px;">Profile</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdownbtn">
+                            <a class="link">Components</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div class="column">
+                                    <a href="CPU.html" class="droplink"><img src="Assets/symbol/CPU.svg" alt="CPU"
+                                            style="height: 100px; width:100px;"><br>CPU</a>
+                                    <a href="STORE.html" class="droplink"><img src="Assets/symbol/SSD.svg" alt="SSD"
+                                            style="height: 100px; width:100px;"><br>STORAGE</a>
+                                </div>
+                                <div class="column">
+                                    <a href="CASE.html" class="droplink"><img src="Assets/symbol/CASE.svg" CASE"
+                                            style="height: 100px; width:100px;"><br>CASE</a>
+                                    <a href="COOLER.html" class="droplink"><img src="Assets/symbol/COOLER.svg"
+                                            alt="COOLER" style="height: 100px; width:100px;"><br>CPU COOLER</a>
+                                </div>
+                                <div class="column">
+                                    <a href="MEMORY.html" class="droplink"><img src="Assets/symbol/RAM.svg" alt="CASE"
+                                            style="height: 100px; width:100px;"><br>MEMORY</a>
+                                    <a href="POWER.html" class="droplink"><img src="Assets/symbol/POWER.svg" alt="POWER"
+                                            style="height: 100px; width:100px;"><br>POWER SUPPLY</a>
+                                </div>
+                                <div class="column">
+                                    <a href="GPU.html" class="droplink"><img src="Assets/symbol/GPU.png" alt="GPU"
+                                            style="height: 100px; width:100px;"><br>GPU</a>
+                                    <a href="MOTHER.html" class="droplink"><img src="Assets/symbol/MB.png" alt="MB"
+                                            style="height: 100px; width:100px;"><br>MOTHERBOARD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="build.html" class="link">Build</a>
+                </li>
+                <li>
+                    <a href="about.html" class="link">About Us</a>
+                </li>
+                <li>
+                    <a href="FAQ.html" class="link">FAQ</a>
+                </li>
+                <li>
+                    <a href="Review.html" class="link">Reviews</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="buildpc">
+
+
+        <div class="video-wrapper">
+            <video playsinline autoplay muted loop poster="Assets/bg2.jpeg">
+                <source src="Assets/144259 (Original).mp4" type="video/webm">
+                Your Browser does not support the video tag.
+            </video>
+
+            <article>
+                <div>
+                    <table id="computerBuilder">
+                        <thead id="tableCats">
+                            <tr>
+                                <th scope="col">
+                                    Component
+                                </th>
+                                <th scope="col">
+                                    Product Select
+                                </th>
+                                <th scope="col">
+                                    Product Image
+                                </th>
+                                <th scope="col">
+                                    Product Name
+                                </th>
+                                <th scope="col">
+                                    Price
+                                </th>
+                                <th scope="col">
+                                    Remove
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="items">
+                                <td scope="row" class="compType">
+                                    <span>Processor</span>
+                                </td>
+                                <td class="prodsel">
+                                    <select name="cputype" id="cpulist">
+                                        <option value="empty" data-desc="No item selected"
+                                            data-img="Assets/icon/webicon.png" data-pri="RM 0" selected>-Select a
+                                            component-</option>
+                                        <option value="cpu1" data-desc="i7-8700
+                                        " data-img="Assets/products/CPU2.png" data-pri="RM1809.99" id="">Intel
+                                            Core
+                                            i7-8700 3.2GHz</option>
+                                        <option value="cpu2" data-desc="i7-2600" data-img="Assets/products/CPU3.png"
+                                            data-pri="RM489.99
+                                            ">Intel Core i7-2600 3.4GHz</option>
+                                        <option value="cpu3" data-desc="i5-3470" data-img="Assets/products/CPU1.png"
+                                            data-pri="RM330.00
+                                        ">Intel Core i5-3470 3.2GHZ
+                                        </option>
+                                        <option value="cpu4" data-desc="Ryzen 9 7900X3D"
+                                            data-img="Assets/products/CPU5.png" data-pri="RM2678.00
+                                        ">Ryzen 9 7900X3D
+                                        </option>
+                                        <option value="cpu5" data-desc="Ryzne 5 3600"
+                                            data-img="Assets/products/CPU4.png" data-pri="RM1209.99
+                                        ">Ryzen 5 5600
+                                        </option>
+                                    </select>
+                                </td>
+                                <td class="compImg">
+                                    <img class="shop-item-image" id="cpuimg" src="Assets/icon/webicon.png"
+                                        alt="Item Image" width="200" height="200">
+                                </td>
+                                <td class="compSpecs">
+                                    <span id="cpuspecs"> </span>
+                                </td>
+                                <td class="compPrice">
+                                    <span class="shop-item-price" id="cpuprice">
+                                        RM0
+                                    </span>
+                                </td>
+                                <td>
+                                    <p><button class="btn-primary shop-item-button" type="button">Add to Cart</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="items">
+                                <td scope="row" class="compType">
+                                    <span>CPU Cooler</span>
+                                </td>
+                                <td class="productimg">
+                                    <select name="fantype" id="fanlist">
+                                        <option value="empty" data-desc="No item selected"
+                                            data-img="Assets/icon/webicon.png" data-pri="RM 0" selected>-Select a
+                                            component-</option>
+                                        <option value="fan1" data-desc="1Stplayer Thunderstorm"
+                                            data-img="Assets/products/COOLER1.png" data-pri="RM189.00
+                                        ">1Stplayer Thunderstorm</option>
+                                        <option value="fan2" data-desc="Asus
+                                        Rog Ryuo lii" data-img="Assets/products/COOLER2.png" data-pri="RM1068.67">Asus
+                                            Rog Ryuo lii
+                                            3600</option>
+                                        <option value="fan3" data-desc="ID-Cooling Frostflow"
+                                            data-img="Assets/products/COOLER3.png" data-pri="RM303.00">
+                                            ID-Cooling Frostflow
+                                            240XT</option>
+                                        <option value="fan4" data-desc="" data-img="Assets/products/COOLER4.png"
+                                            data-pri="RM150.00">Jonsbo Mx600</option>
+                                        <option value="fan5" data-desc="" data-img="Assets/products/COOLER5.png"
+                                            data-pri="RM199.00">Marsgaming Mcpu44
+                                        </option>
+                                    </select>
+                                </td>
+                                <td class="compImg">
+                                    <img class="shop-item-image" id="fanimg" src="Assets/icon/webicon.png"
+                                        alt="Item Image" width="100" height="100">
+                                </td>
+                                <td class="compSpecs">
+                                    <span id="fanspecs"> </span>
+                                </td>
+                                <td class="compPrice">
+                                    <span class="shop-item-price" id="fanprice">
+                                        RM0
+                                    </span>
+                                </td>
+                                <td class="Remove">
+                                    <p><button class="btn-primary shop-item-button" type="button">Add to Cart</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="items">
+                                <td scope="row" class="compType">
+                                    <span>Case</span>
+                                </td>
+                                <td class="prodsel">
+                                    <select name="casetype" id="caselist">
+                                        <option value="empty" data-desc="No item selected"
+                                            data-img="Assets/icon/webicon.png" data-pri="RM 0" selected>-Select a
+                                            component-</option>
+                                        <option value="case1" data-desc="" data-img="Assets/products/CASE1.png"
+                                            data-pri="RM668.39">Corsair 4000D Airflow
+                                            ATX Mid Tower Case
+                                        </option>
+                                        <option value="case2" data-desc="" data-img="Assets/products/CASE5.png"
+                                            data-pri="RM447.26">NZXT H5 Flow ATX Mid
+                                            Tower Case
+                                        </option>
+                                        <option value="case3" data-desc="" data-img="Assets/products/CASE2.png"
+                                            data-pri="RM657.85">Corsair iCUE 4000X
+                                            RGB ATX Mid Tower Case
+                                        </option>
+                                        <option value="case4" data-desc="" data-img="Assets/products/CASE3.png"
+                                            data-pri="RM470.75">Fractal Design
+                                            Meshify C ATX Mid Tower Case
+                                        </option>
+                                        <option value="case5" data-desc="" data-img="Assets/products/CASE4.png"
+                                            data-pri="RM693.00">Lian Li PC-O11
+                                            Dynamic ATX Full Tower Case
+                                        </option>
+                                    </select>
+                                </td>
+                                <td class="compImg">
+                                    <img class="shop-item-image" id="caseimg" src="Assets/icon/webicon.png"
+                                        alt="Item Image" width="200" height="200">
+                                </td>
+                                <td class="compSpecs">
+                                    <span id="casespecs">
+
+                                    </span>
+                                </td>
+                                <td class="compPrice">
+                                    <span class="shop-item-price" id="caseprice">
+                                        RM0
+                                    </span>
+                                </td>
+                                <td>
+                                    <p><button class="btn-primary shop-item-button" type="button">Add to Cart</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="items">
+                                <td scope="row" class="compType">
+                                    <span>RAM</span>
+                                </td>
+                                <td class="prodsel">
+                                    <select name="ramtype" id="ramlist">
+                                        <option value="empty" data-desc="No item selected"
+                                            data-img="Assets/icon/webicon.png" data-pri="RM 0" selected>
+                                            -Select a component-</option>
+                                        <option value="ram1" data-desc="" data-img="Assets/products/RAM3.png"
+                                            data-pri="RM329.56">Corsair
+                                            Vengeance RGB
+                                            Pro 16 GB DDR4-3600 CL18 Memory
+                                        </option>
+                                        <option value="ram2" data-desc="" data-img="Assets/products/RAM2.png"
+                                            data-pri="RM178.00">
+                                            Corsair Vengeance LPX 16 GB
+                                            DDR4-3200 CL16 Memory
+                                        </option>
+                                        <option value="ram3" data-desc="" data-img="Assets/products/RAM4.png"
+                                            data-pri="RM659.00">G.Skill Trident Z5 RGB
+                                            Silver 32GB DDR5 6000MHz CL36 Desktop Memory</option>
+                                        <option value="ram4" data-desc="" data-img="Assets/products/RAM5.png"
+                                            data-pri="RM155.36">
+                                            TEAMGROUP T-Force Vulcan Z 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory
+                                        </option>
+                                        <option value="ram5" data-desc="" data-img="Assets/products/RAM1.png"
+                                            data-pri="RM163.11">Crucial Ballistix 3200 MHz DDR4 DRAM Desktop Gaming
+                                            Memory Kit
+                                            16GB (8GBx2)
+                                        </option>
+                                    </select>
+                                </td>
+                                <td class="compImg">
+                                    <img class="shop-item-image" id="ramimg" src="Assets/icon/webicon.png"
+                                        alt="Item Image" width="200" height="200">
+                                </td>
+                                <td class="compSpecs">
+                                    <span id="ramspecs">
+
+                                    </span>
+                                </td>
+                                <td class="compPrice">
+                                    <span class="shop-item-price" id="ramprice">
+                                        RM0
+                                    </span>
+                                </td>
+                                <td>
+                                    <p><button class="btn-primary shop-item-button" type="button">Add to Cart</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="items">
+                                <td scope="row" class="compType">
+                                    <span>Storage</span>
+                                </td>
+                                <td class="prodsel">
+                                    <select name="ssdtype" id="ssdlist">
+                                        <option value="empty" data-desc="No item selected"
+                                            data-img="Assets/icon/webicon.png" data-pri="RM 0" selected>
+                                            -Select a component-</option>
+                                        <option value="ssd1" data-desc="" data-img="Assets/products/SSD1.png"
+                                            data-pri="RM 142.00">Crucial P3 M.2 NVME
+                                        </option>
+                                        <option value="ssd2" data-desc="" data-img="Assets/products/SSD2.png"
+                                            data-pri="RM 253.00">Kingston A400
+                                        </option>
+                                        <option value="ssd3" data-desc="" data-img="Assets/products/SSD3.png"
+                                            data-pri="RM139.00">Pny Cs2241</option>
+                                        <option value="ssd4" data-desc="" data-img="Assets/products/SSD5.png"
+                                            data-pri="RM 140.00">Samsung 970 Evo plus
+                                        </option>
+                                        <option value="ssd5" data-desc="" data-img="Assets/products/SSD4.png"
+                                            data-pri="RM549.00">Western
+                                            Digital Black
+                                        </option>
+
+                                    </select>
+                                </td>
+                                <td class="compImg">
+                                    <img class="shop-item-image" id="ssdimg" src="Assets/icon/webicon.png"
+                                        alt="Item Image" width="200" height="200">
+                                </td>
+                                <td class="compSpecs">
+                                    <span id="ssdspecs">
+
+                                    </span>
+                                </td>
+                                <td class="compPrice">
+                                    <span class="shop-item-price" id="ssdprice">
+                                        RM0
+                                    </span>
+                                </td>
+                                <td>
+                                    <p><button class="btn-primary shop-item-button" type="button">Add to Cart</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="items">
+                                <td scope="row" class="compType">
+                                    <span>Power Supply</span>
+                                </td>
+                                <td class="prodsel">
+                                    <select name="powtype" id="powlist">
+                                        <option value="empty" data-desc="No item selected"
+                                            data-img="Assets/icon/webicon.png" data-pri="RM 0" selected>
+                                            -Select a component-</option>
+                                        <option value="pow1" data-desc="" data-img="Assets/products/PS1.png"
+                                            data-pri="RM199.00">Aigo
+                                            GP550 550W
+                                        </option>
+                                        <option value="pow2" data-desc="" data-img="Assets/products/PS2.png"
+                                            data-pri="RM189.00">HP ATX</option>
+                                        <option value="pow3" data-desc="" data-img="Assets/products/PS3.png"
+                                            data-pri="RM206.99">RS PRO 400W</option>
+                                        <option value="pow4" data-desc="" data-img="Assets/products/PS4.png"
+                                            data-pri="RM239.99">RS PRO 500W</option>
+                                        <option value="pow5" data-desc="" data-img="Assets/products/PS5.png"
+                                            data-pri="RM381.99">RS PRO 800W</option>
+                                    </select>
+                                </td>
+                                <td class="compImg">
+                                    <img class="shop-item-image" id="powimg" src="Assets/icon/webicon.png"
+                                        alt="Item Image" width="200" height="200">
+                                </td>
+                                <td class="compSpecs">
+                                    <span id="powspecs">
+
+                                    </span>
+                                </td>
+                                <td class="compPrice">
+                                    <span class="shop-item-price" id="powprice">
+                                        RM0
+                                    </span>
+                                </td>
+                                <td>
+                                    <p><button class="btn-primary shop-item-button" type="button">Add to Cart</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="items">
+                                <td scope="row" class="compType">
+                                    <span>Video Card</span>
+                                </td>
+                                <td class="prodsel">
+                                    <select name="gputype" id="gpulist">
+                                        <option value="empty" data-desc="No item selected"
+                                            data-img="Assets/icon/webicon.png" data-pri="RM 0" selected>
+                                            -Select a component-</option>
+                                        <option value="gpu1" data-desc="" data-img="Assets/products/GPU4.png"
+                                            data-pri="RM4066.91">ASUS TUF Gaming
+                                            NVIDIA GeForce
+                                            RTX™ 4070 Ti
+                                        </option>
+                                        <option value="gpu2" data-desc="" data-img="Assets/products/GPU3.png" data-pri="RM 9551.49
+                                        ">ASUS ROG Strix GeForce RTX®
+                                            4090 OC Edition Gaming Graphics Card
+                                        </option>
+                                        <option value="gpu3" data-desc="" data-img="Assets/products/GPU2.png"
+                                            data-pri="RM1692.95">PNY GeForce RTX 3060
+                                            Ti 8GB
+                                            Verto Dual Fan Graphics Card LHR
+                                        </option>
+                                        <option value="gpu4" data-desc="" data-img="Assets/products/GPU1.png"
+                                            data-pri="RM9411.29">EVGA GeForce RTX 3090
+                                            Ti FTW3
+                                            Gaming
+                                        </option>
+                                        <option value="gpu5" data-desc="" data-img="Assets/products/GPU5.png"
+                                            data-pri="RM6167.48">EVGA RTX 3080 Ti FTW3
+                                            Ultra
+                                        </option>
+                                    </select>
+                                </td>
+                                <td class="compImg">
+                                    <img class="shop-item-image" id="gpuimg" src="Assets/icon/webicon.png"
+                                        alt="Item Image" width="200" height="200">
+                                </td>
+                                <td class="compSpecs">
+                                    <span id="gpuspecs">
+
+                                    </span>
+                                </td>
+                                <td class="compPrice">
+                                    <span class="shop-item-price" id="gpuprice">
+                                        RM0
+                                    </span>
+                                </td>
+                                <td>
+                                    <p><button class="btn-primary shop-item-button" type="button">Add to Cart</button>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="items">
+                                <td scope="row" class="compType">
+                                    <span>Motherboard</span>
+                                </td>
+                                <td class="prodsel">
+                                    <select name="boardtype" id="boardlist">
+                                        <option value="empty" data-desc="No item selected"
+                                            data-img="Assets/icon/webicon.png" data-pri="RM 0" selected>
+                                            -Select a component-</option>
+                                        <option value="bord1" data-desc="" data-img="Assets/products/MB1.png"
+                                            data-pri="RM399.99">Asus
+                                            Prime Z370-P
+                                        </option>
+                                        <option value="bord2" data-desc="" data-img="Assets/products/MB2.png"
+                                            data-pri="RM531.99">Asus
+                                            Pro H610T
+                                        </option>
+                                        <option value="bord3" data-desc="" data-img="Assets/products/MB3.png"
+                                            data-pri="RM 468.55">
+                                            ASUS
+                                            TUF B360M-Plus
+                                        </option>
+                                        <option value="bord4" data-desc="" data-img="Assets/products/MB4.png"
+                                            data-pri="RM250.00">HP H87 1150</option>
+                                        <option value="bord5" data-desc="" data-img="Assets/products/MB5.png"
+                                            data-pri="RM 259.99">
+                                            Intel
+                                            Desktop 1155
+                                        </option>
+                                    </select>
+                                </td>
+                                <td class="compImg">
+                                    <img class="shop-item-image" id="boardimg" src="Assets/icon/webicon.png"
+                                        alt="Item Image" width="200" height="200">
+                                </td>
+                                <td class="compSpecs">
+                                    <span id="boardspecs">
+
+                                    </span>
+                                </td>
+                                <td class="compPrice">
+                                    <span class="shop-item-price" id="boardprice">
+                                        RM0
+                                    </span>
+                                </td>
+                                <td>
+                                    <p><button class="btn-primary shop-item-button" type="button">Add to Cart</button>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </article>
+        </div>
+
+        <div class="video-wrapper">
+            <video playsinline autoplay muted loop poster="Assets/bg2.jpeg">
+                <source src="Assets/144259 (Original).mp4" type="video/webm">
+                Your Browser does not support the video tag.
+            </video>
+
+            <article>
+                <form action="Payment.html">
+                    <aside class="container content-section">
+                        <h2 class="section-header">CART</h2>
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">ITEM</span>
+                            <span class="cart-price cart-header cart-column">PRICE</span>
+                            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                        </div>
+                        <div class="cart-items">
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total</strong>
+                            <span class="cart-total-price">RM0</span>
+                        </div>
+                        <input type="submit" class="btn btn-primary btn-purchase" value="PURCHASE">
+                    </aside>
+                </form>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <div id="contact-box">
+            <label id="contact"><strong>CONTACT</strong></label>
+            <p>168, Jln Bukit Bintang,</br></br> Bukit Bintang, 55100 Kuala Lumpur</p></br>
+            <div id="seperateContact">
+                <a href="https://www.instagram.com/maxiware2000/"><img src="Assets/icon/IG.png" alt="instagram"
+                        width="30px" /></a>
+                <a href="https://www.facebook.com/"><img src="Assets/icon/facebook.png" alt="facebook"
+                        width="30px" /></a>
+                <a href="mailto: Maxiware2000@gmail.com"><img src="Assets/icon/GM.png" alt="gmail" width="30px" /></a>
+                <a href="https://twitter.com/"><img src="Assets/icon/twitter.png" alt="twitter" width="30px" /></a>
+                <a href="tel: 999-999-9999"><img src="Assets/icon/TEL.png" alt="TEL" width="30px"></a>
+            </div>
+        </div>
+
+        <div>
+            <label id="components"><strong>COMPONENTS</strong></label> </br> </br>
+            <div id="seperateComponents">
+                <a href="CPU.html">CPU</a> </br>
+                <a href="STORE.html">STORAGE</a> </br>
+                <a href="CASE.html">CASE</a> </br>
+                <a href="COOLER.html">CPU_COOLER</a> </br>
+                <a href="MEMORY.html">MEMORY</a> </br>
+                <a href="POWER.html">POWER_SUPPLY</a> </br>
+                <a href="GPU.html">GPU</a> </br>
+                <a href="MOTHER.html">MOTHERBOARD</a> </br>
+            </div>
+        </div>
+
+        <div>
+            <label id="linksFooter"><strong>LINKS</strong></label> </br> </br>
+            <div id="seperateLinks">
+                <a href="about.html">ABOUT_US</a> </br>
+                <a href="pf_profile.html">PROFILE</a> </br>
+                <a href="build.html">BUILD</a> </br>
+                <a href="FAQ.html">FAQ</a> </br>
+                <a href="Review.html">REVIEWS</a>
+            </div>
+        </div>
+
+        <div id="stayTunedWithUs">
+            <label id="stayTuned"><strong>STAY TUNED WITH US</strong></label> </br> </br> </br>
+            <input type="email" id="emailFooter" placeholder="Your Email Address"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Please enter a valid email address" /> </br>
+            </br> </br>
+            <button type="submit" id="subscribe"><a href="#">Subscribe</a></button>
+        </div>
+    </footer>
+
+    <script src="js/guide.js"></script>
+    <script src="js/build.js"></script>
+</body>
+
+</html>
